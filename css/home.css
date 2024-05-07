@@ -5,19 +5,16 @@ body {
   }
 
 .justify-text {
-    text-align: justify;
+    text-align: center;
 }
 
 .navbar-nav .nav-item.active .nav-link {
     color: #111111 !important;
     font-weight: bold;
+    text-align: center;
 }
 
-.nav-item {
-    margin-left: 2%;
-    padding-inline-start: 3%;
-    justify-content: center;
-}
+
 .about-heading {
     margin-bottom: 5px; 
     font-size: 70px;
@@ -36,3 +33,4 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
