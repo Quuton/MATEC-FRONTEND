@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
         
         <a class ="navbar-brand">
             <img src="/assets/logo.png" height="100px" alt="Your Logo">
@@ -39,16 +39,20 @@
             <li class="nav-item">
             <a class="nav-link" href="Announcements.html">Announcement</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Login.html">Login</a>
+            <li class="nav-item active">
+                <a class="nav-link disabled" href="Projects.html">Projects</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Signup.html">Signup</a>
             </li>
         </ul>
+        </div>
+        <div class="d-flex justify-content-end">
+          <a href="Login.html" type="button"
+             data-mdb-button-init data-mdb-ripple-init 
+             class="btn btn-info btn-block btn-lg gradient-custom-4 text-body" style="margin-right: 20px;">
+             Login
+          </a>
         </div>
     </nav>
     <!-- Start of MAIN CONTENTS -->
@@ -91,7 +95,7 @@
 
     </main>
     <!-- Footer -->
-    <footer class="bg-info text-center text-lg-start fixed-bottom" style="background-color: #36382E !important; color: white;">
+    <footer class="bg-info text-center text-lg-start" style="background-color: #36382E !important; color: white;">
         <!-- Copyright -->
         <div class="text-center p-3">
             &copy; Copyright Bagno 2024

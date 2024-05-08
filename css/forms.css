@@ -1,5 +1,6 @@
 h2{
     text-align: center;
+    font-weight: bold;
 }
 
 h6{
@@ -36,14 +37,14 @@ div.Forms{
 table {
 
     table-layout: auto;
-    width: 820px;
+    width: 800px;
     text-align: center;
     font-size: 18px;
   }
   
   td, th {
     color:black;
-    border: 3px solid rgb(133, 117, 117);
+    border: 1px solid rgb(133, 117, 117);
     text-align: center;
     padding: 8px;
   }

@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
         
         <a class ="navbar-brand">
             <img src="/assets/logo.png" height="100px" alt="Your Logo">
@@ -30,8 +30,8 @@
             <li class="nav-item">
             <a class="nav-link" href="About.html">About Us</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link" href="Contacts.html">Contact Page</a>
+            <li class="nav-item active">
+            <a class="nav-link disabled" href="Contacts.html">Contact Page</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="Forms.html">Form Collection</a>
@@ -43,13 +43,17 @@
                 <a class="nav-link" href="Projects.html">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Login.html">Login</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="Signup.html">Signup</a>
             </li>
         </ul>
         </div>
+        <div class="d-flex justify-content-end">
+            <a href="Login.html" type="button"
+               data-mdb-button-init data-mdb-ripple-init 
+               class="btn btn-info btn-block btn-lg gradient-custom-4 text-body" style="margin-right: 20px;">
+               Login
+            </a>
+          </div>
     </nav>
     <!-- Start of MAIN CONTENTS -->
     <main>
@@ -62,13 +66,14 @@
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 <p> contact us: 0912345667</p>
                 <h4>Find Us:</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.009696234054!2d120.82042697592152!3d14.824713921548812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396523ec508cad9%3A0xc31107d39942c99c!2sBagna%2C%20Malolos%2C%20Bulacan!5e0!3m2!1sen!2sph!4v1715155571497!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.009696234054!2d120.82042697592152!3d14.824713921548812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396523ec508cad9%3A0xc31107d39942c99c!2sBagna%2C%20Malolos%2C%20Bulacan!5e0!3m2!1sen!2sph!4v1715155571497!5m2!1sen!2sph" 
+                width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 
     </main>
     <!-- Footer -->
-    <footer class="bg-info text-center text-lg-start fixed-bottom" style="background-color: #36382E !important; color: white;">
+    <footer class="bg-info text-center text-lg-start" style="background-color: #36382E !important; color: white;">
         <!-- Copyright -->
         <div class="text-center p-3">
             &copy; Copyright Bagno 2024
