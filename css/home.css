@@ -94,3 +94,15 @@ body {
     /* Other styles from Bootstrap */
 }
 
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 80px;
+    background-size: 1000px;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #333333;  /* Optional: Set arrow background color to dark gray */
+}
