@@ -9,7 +9,7 @@ body {
 }
 
 .navbar-nav .nav-item.active .nav-link {
-    color: #940C0C !important;
+    color: #1f97bb !important;
     font-weight: bold;
 }
 .about-heading {
@@ -168,3 +168,7 @@ h2 {
 h3 {
     font-weight: bold;
 }
+
+
+
+/* ADMIN CONTENTS */

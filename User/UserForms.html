@@ -6,7 +6,8 @@
     <title>Barangay Bagna</title>
     <!-- style -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/base.css">  
+    <link rel="stylesheet" href="css/base.css"> 
+    <link rel="stylesheet" href="css/signup.css"> 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -53,16 +54,49 @@
     </nav>
     <!-- Start of MAIN CONTENTS -->
     <main>
-        <div class="container">
-            <div class="panel1">
-                <h1>About Us</h1> 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Application Form</h2>
+
+              <form>
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Name</label>
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                </div>
+                  
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <img> <label class="form-label" for="form3Example4cg"></label>
+                    <input type="file" id="form3Example4cg" />
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cdg">Date and Time</label>
+                    <input type="datetime-local" id="form3Example4cdg" class="form-control form-control-lg" />
+                  </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="button"
+                    data-mdb-button-init data-mdb-ripple-init class="btn btn-secondary btn-block btn-lg gradient-custom-4 text-body">Submit</button>
+                </div>
+
+              </form>
+
             </div>
+          </div>
         </div>
-        
+      </div>
+    </div>
+  </div>
+</section>
+
+        </body>
+
+
     </main>
     <!-- Footer -->
     <footer class="bg-info text-center text-lg-start fixed-bottom" style="background-color: #36382E !important; color: white;">

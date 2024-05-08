@@ -60,38 +60,55 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+              <h2 class="text-uppercase text-center mb-5">Create Announcements</h2>
 
               <form>
 
                 <div data-mdb-input-init class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Title Name</label>
                   <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example1cg">Your Full Name</label>
                 </div>
 
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example3cg">Your Email</label>
-                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example3cg">Description</label>
+                    <textarea id="form3Example3cg" class="form-control form-control-lg"></textarea>
+                    
+                  </div>
+                  
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <img id="previewImage" src="" alt="Image Preview" style="width: 100px; height: 100px; object-fit: cover;"> <label class="form-label" for="form3Example4cg">Upload Image</label>
+                    <input type="file" id="form3Example4cg" />
+                  </div>
+                  
+                  <script>
+                    const imageUpload = document.getElementById('form3Example4cg');
+                    const previewImage = document.getElementById('previewImage');
 
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example4cg">Password</label>
-                </div>
+                    imageUpload.addEventListener('change', function() {
+                    if (this.files && this.files[0]) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                        previewImage.setAttribute('src', e.target.result);
+                        };
+                        reader.readAsDataURL(this.files[0]);
+                    } else {
+                        previewImage.setAttribute('src', ''); // Clear preview if no file selected
+                    }
+                    });
+                  </script>
+                  
 
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example4cdg">Repeat your password</label>
-                </div>
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cdg">Date and Time</label>
+                    <input type="datetime-local" id="form3Example4cdg" class="form-control form-control-lg" />
+                    
+                  </div>
 
 
                 <div class="d-flex justify-content-center">
                   <button type="button"
-                    data-mdb-button-init data-mdb-ripple-init class="btn btn-secondary btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                    data-mdb-button-init data-mdb-ripple-init class="btn btn-secondary btn-block btn-lg gradient-custom-4 text-body">Submit</button>
                 </div>
-
-                <p class="text-center text-muted mt-5 mb-0">Already Have an account? <a href="/Login.html"
-                    class="fw-bold text-body"><u>Login here</u></a></p>
 
               </form>
 
@@ -108,7 +125,7 @@
 
     </main>
     <!-- Footer -->
-    <footer class="bg-info text-center text-lg-start" style="background-color: #36382E !important; color: white;">
+    <footer class="bg-info text-center text-lg-start fixed-bottom" style="background-color: #36382E !important; color: white;">
         <!-- Copyright -->
         <div class="text-center p-3">
             &copy; Copyright Bagno 2024
